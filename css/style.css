@@ -1,0 +1,119 @@
+/*
+ * Globals
+ */
+html,
+body {
+  height: 100%;
+  background-color: #ece6e2;
+  background-image: url('../img/josh-left.png'), url('../img/juli-right.png');
+  background-repeat: no-repeat;
+  background-position: left, right;
+}
+
+body {
+  color: #fff;
+  text-align: center;
+}
+h1,h2,h3,h4,h5,h6,p {
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+}
+h2 {
+	font-weight: 100;
+}
+.words {
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+  margin-top: 100px;
+}
+.rsvp {
+	height: 160px;
+	background-image: url('../img/rsvp.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 160px;
+	display: block;
+	text-indent: -9999px;
+	margin: 0 auto;
+}
+.rsvp:hover {
+	opacity: .7;
+   	transition: opacity .25s ease-in-out;
+   	-moz-transition: opacity .25s ease-in-out;
+   	-webkit-transition: opacity .25s ease-in-out;
+}
+
+.reveal-modal {
+	top: 100px;
+	opacity: 1;
+	width: 50%;
+	margin: 0 auto;
+	left: 25%;
+	top: 50px;
+}
+.desc {
+	font-family: 'Open Sans', sans-serif;
+	color:#000;
+	font-weight: 100;
+}
+.submit {
+	background-color: #7dc8b8;
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	font-weight: 600;
+	padding: 10px 30px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+
+/*Small screens*/
+
+@media only screen { 
+	
+} /* Define mobile styles */
+
+@media only screen and (max-width: 40em) { 
+	body {
+	  height: 100%;
+	  background-color: #ece6e2;
+	  background-image: none;
+	}
+	.words {
+	  margin: 0 auto;
+	  display: block;
+	  width: 100%;
+	  margin-top: 10px;
+	}
+	.rsvp {
+		margin-left: 100px;
+	}
+
+	.reveal-modal {
+		top: 100px;
+		opacity: 1;
+		width: 100%;
+		margin: 0 auto;
+		left: 0;
+		top: 50px;
+	}
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+/*Medium screens*/
+@media only screen and (min-width: 40.063em) { 
+
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+
+
+
+
+
+
+
+
+
